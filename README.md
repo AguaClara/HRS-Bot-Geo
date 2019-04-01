@@ -10,10 +10,11 @@ Members:
   Luis Benitez (leb252)
 
 ## Spring 2019
+[Spring 2019 Midway Symposium](https://docs.google.com/presentation/d/1c2WiqrccmSYwniigbZUiy_6dTOUMYyJcTIJxhGdgXDE/edit?usp=sharing)
 
 ## Fall 2018
 
-[Fall 2018 Symposium 1](https://docs.google.com/presentation/d/1u3fxIf9vtdHHwcMWtzHYxHjPYZSLlFpZ1K_WBXNxf2Y/edit?usp=sharing)
+[Fall 2018 Midway Symposium](https://docs.google.com/presentation/d/1u3fxIf9vtdHHwcMWtzHYxHjPYZSLlFpZ1K_WBXNxf2Y/edit?usp=sharing)
 
 [Fall 2018 Final Presentation](https://docs.google.com/presentation/d/1PV9bagOBUy-ZvQFPDu0bNqsb2AYa8h4Tqu0voEA8McE/edit#slide=id.g346a079b2f_0_0)
 
