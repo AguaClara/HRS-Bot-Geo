@@ -69,11 +69,11 @@ Figure 8: A stacked cylinder filter insert.
 Python coagulant dosing calculations were used to determine the required coagulant pump speed for the desired coagulant dosage. The Summer 2018 High Rate Sedimentation team also determined that a coagulant dose of 4.5 mg/L was optimal to ensure that coagulant was not a limiting factor in the system. This dose corresponds to a pump speed of 60 RPM. This code can be found in the [Manual](#Manual) section of this report.
 
 #### Flow Rate
-The flow rate through the system was calculated in accordance with the desired upflow velocity of 2 mm/s, as determined by the Summer 2018 High Rate Sedimentation team. The tube settler has an inner diameter of 1 inch, so the following formula
+The flow rate through the system was calculated in accordance with the desired upflow velocity of 2 mm/s and 3 mm/s, as determined by the Summer 2018 High Rate Sedimentation team. The tube settler has an inner diameter of 1 inch, so the following formula
 
 <div style="text-align:center"><img src ="https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/Images/dvdt.svg?sanitize=true" /></div>
 
-was used to determine that a flow rate of 90 mL/min was appropriate for the experiment, which corresponded to a pump speed of 60 RPM for the water pump.
+was used to determine the flow rates. A 2 mm/s upflow velocity corresponds to a flow rate of 60 mL/min, and a 3 mm/s upflow velocity corresponds to a flow rate of 90 mL/min. 
 
 ### ProCoDA Methods
 PID Control is the state that is used to run experiments. PID Control controls the clay pump speed to keep the influent turbidity stable at 100 NTU, which is the standardized influent turbidity for the AguaClara High Rate Sedimentation teams. The values of P, i, and D were calibrated using [this guide](https://confluence.cornell.edu/display/AGUACLARA/Calibrating+PID+Control).
