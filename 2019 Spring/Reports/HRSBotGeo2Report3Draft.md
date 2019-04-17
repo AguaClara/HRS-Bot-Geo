@@ -66,7 +66,7 @@ Figure 8: A stacked cylinder filter insert.
 
 ### Calculations
 #### Coagulant Dosing
-Python coagulant dosing calculations were used to determine the required coagulant pump speed for the desired coagulant dosage. The Summer 2018 High Rate Sedimentation team also determined that a coagulant dose of 4.5 mg/L was optimal to ensure that coagulant was not a limiting factor in the system. This dose corresponds to a pump speed of 60 RPM. This code can be found in the [Manual](#Manual) section of this report.
+Python coagulant dosing calculations were used to determine the required coagulant pump speed for the desired coagulant dosage. The Summer 2018 High Rate Sedimentation team also determined that a coagulant dose of 4.5 mg/L was optimal to ensure that coagulant was not a limiting factor in the system. This dose corresponds to a pump speed of 6.2 RPM. This code can be found in the [Manual](#Manual) section of this report.
 
 #### Flow Rate
 The flow rate through the system was calculated in accordance with the desired upflow velocity of 2 mm/s and 3 mm/s, as determined by the Summer 2018 High Rate Sedimentation team. The tube settler has an inner diameter of 1 inch, so the following formula
