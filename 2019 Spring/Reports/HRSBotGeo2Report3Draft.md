@@ -71,9 +71,11 @@ Python coagulant dosing calculations were used to determine the required coagula
 #### Flow Rate
 The flow rate through the system was calculated in accordance with the desired upflow velocity of 2 mm/s and 3 mm/s, as determined by the Summer 2018 High Rate Sedimentation team. The tube settler has an inner diameter of 1 inch, so the following formula
 
+asdfghj
+
 <div style="text-align:center"><img src ="https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/Images/dvdt.svg?sanitize=true" /></div>
 
-was used to determine the flow rates. A 2 mm/s upflow velocity corresponds to a flow rate of 60 mL/min, and a 3 mm/s upflow velocity corresponds to a flow rate of 90 mL/min. 
+was used to determine the flow rates. A 2 mm/s upflow velocity corresponds to a flow rate of 60 mL/min, and a 3 mm/s upflow velocity corresponds to a flow rate of 90 mL/min.
 
 ### ProCoDA Methods
 PID Control is the state that is used to run experiments. PID Control controls the clay pump speed to keep the influent turbidity stable at 100 NTU, which is the standardized influent turbidity for the AguaClara High Rate Sedimentation teams. The values of P, i, and D were calibrated using [this guide](https://confluence.cornell.edu/display/AGUACLARA/Calibrating+PID+Control).
@@ -253,7 +255,7 @@ For the second sheet that contains data collected from the second day of the exp
 ![Example Day Fraction Conversion](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/example%20data%20calc.PNG)
 Figure 16: An example day fraction conversion to time since the experiment started. The last three values of the first sheet and the fist three values of the second sheet are included and the formulas are shown.
 
-The following code was used to graph the data collected from the experiments. The sheer amount of data, over 100,000 data points, was too much for Python to graph and had a very long processing time. The team decided that it would be more efficient to graph the data in Excel. The code below works for fewer data points, i.e. 10,000. 
+The following code was used to graph the data collected from the experiments. The sheer amount of data, over 100,000 data points, was too much for Python to graph and had a very long processing time. The team decided that it would be more efficient to graph the data in Excel. The code below works for fewer data points, i.e. 10,000.
 
 ```Python
 import matplotlib.pyplot as plt
