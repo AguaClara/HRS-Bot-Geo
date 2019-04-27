@@ -1,7 +1,7 @@
 # High Rate Sedimentation: Bottom Geometry Report 3 Draft
 #### Madeleine Lee (ml895)
 #### Luis Benitez (leb252)
-April 12, 2019
+April 26, 2019
 
 **[Felix: Hey I'm going to be making comments in these square brackets. After addressing any comments please write within the brackets "-Addressed __" with the individual's initials in the __ space. They will be deleted in the next report.]**
 
@@ -85,10 +85,10 @@ PID Control was the state that was used to run experiments. PID Control controll
 ### Experimental Apparatus
 The overall experimental setup consisted of clay and coagulant reservoirs, four distinct pumps, a flocculator, a tube settler, a pressure attenuator, and two turbidimeters. The clay stock tank was the clay reservoir and holds a mixture of clay and water. The stirrer continuously mixed the contents of the stock tank. The PaCl coagulant stock tank contained water and PaCl (the coagulant agent) at a concentration of 5 mg/L. The first pump, the water pump, controlled the water flow throughout the system with the flow rate set manually. The second pump, the clay pump, was controlled by ProCoDA with the use of PID Control to dose clay into the system to maintain an influent turbidity of 100 NTU. The third pump, the coagulant pump, was used to control the coagulant dose and was set manually to dose the optimal coagulant concentration determined by the Summer 2018 High Rate Sedimentation team. The final pump, the effluent pump, was used to pump effluent out of the floc weir to prevent the buildup of too many flocs.
 
-The flocculator was made by winding tubing around a cardboard cylinder. The purpose of the flocculator is to encourage collisions between clay and coagulant particles **[flocculator's purpose is to encourage collisions between clay and coagulant particles more specifically - Addressed LB]**. Sedimentation occurred in the tube settler, where flocs are recirculated through the settler. Optimal performance of the tube settler involved the formation of a floc blanket, or a suspended fluidized bed of flocs that capture other flocs that are too small to settle. The flocs then flowed down the floc weir, the extension jutting out from the left side of the tube settler. The pressure attenuator indicated whether there pressure was building up in the system; i.e. if water was rising in the attenuator, pressure was building up somewhere, likely due to a closed valve. Lastly, there were two turbidimeters: one that measured influent turbidity and one that measured effluent turbidity. All these components are labeled in Figure 10 below.
+The flocculator was made by winding tubing around a cardboard cylinder. The purpose of the flocculator is to encourage collisions between clay and coagulant particles **[flocculator's purpose is to encourage collisions between clay and coagulant particles more specifically - Addressed LB]**. Sedimentation occurred in the tube settler, where flocs are recirculated through the settler. Optimal performance of the tube settler involved the formation of a floc blanket, or a suspended fluidized bed of flocs that capture other flocs that are too small to settle. The flocs then flowed down the floc weir, the extension jutting out from the left side of the tube settler. The pressure attenuator indicated whether there pressure was building up in the system; i.e. if water was rising in the attenuator, pressure was building up somewhere, likely due to a closed valve. Lastly, there were two turbidimeters: one that measured influent turbidity and one that measured effluent turbidity. All these components are labeled in Figure 9 below.
 
 ![HRS Bottom Geometry Apparatus](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/Images/ExperimentalApparatus.PNG)
-Figure 10: Bottom Geometry apparatus with labeled components.
+Figure 9: Bottom Geometry apparatus with labeled components.
 
 ### Procedure
 #### Cleaning the Apparatus
@@ -105,31 +105,31 @@ A successful experiment in the context of the Bottom Geometry team would mean th
 A stable floc blanket was indicated by the effluent turbidity -- effluent turbidity was inversely correlated with performance; i.e. a lower effluent turbidity indicated better performance and greater floc blanket stability, which meant the floc blanket does not decay. A stable floc blanket was also indicated by the time it takes for the effluent turbidity to start increasing after reaching the maximum removal. If it took a longer time for turbidity to increase, the blanket is more stable.
 
 ###Baseline Experiment: Old Tube Settler at 2 mm/s Upflow Velocity
-A baseline control experiment, at 2 mm/s upflow velocity, was conducted without any printed inserts. As seen in Figure 11, the effluent turbidity lies between 4 to 40 NTU. Within the first ten hours of the experiment, the effluent turbidity remained fairly constant, therefore indicating a floc blanket formed and stabilized; however, the floc blanket began to decay exponentially, illustrated by the rapid increase in effluent turbidity after the tenth hour. Flocs also settled at the bottom of the tube settler, producing "gelling," or forming a thick and dense layer, in a very compact manner (Figure 12). The exponential increase of the turbidity indicated an exponential decay of the floc blanket. This led to the implementation of the stacked cylinder design, whose goal was to stabilize the floc blanket and prevent gelling.
+A baseline control experiment, at 2 mm/s upflow velocity, was conducted without any printed inserts. As seen in Figure 10, the effluent turbidity lies between 4 to 40 NTU. Within the first ten hours of the experiment, the effluent turbidity remained fairly constant, therefore indicating a floc blanket formed and stabilized; however, the floc blanket began to decay exponentially, illustrated by the exponential increase in effluent turbidity after the tenth hour. Flocs also settled at the bottom of the tube settler, producing "gelling," or forming a thick and dense layer, in a very compact manner (Figure 11). The exponential increase of the turbidity indicated an exponential decay of the floc blanket. This led to the implementation of the stacked cylinder design, whose goal was to stabilize the floc blanket and prevent gelling.
 
-**[How was exponential increase determined. Was there a line of best fit? If there was please include that on the same graph as Figure 11 along with the R^2 value. If not, you should include it]**
+**[How was exponential increase determined. Was there a line of best fit? If there was please include that on the same graph as Figure 11 along with the R^2 value. If not, you should include it -addressed ML]**
 
-![Baseline Results](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/Control_Exp_3-8.JPG)
-Figure 11: Baseline experiment results for a 2 mm/s upflow velocity in the old tube settler. The turbidity increased exponentially after the tenth hour.
+![Baseline Expt Old Settler 2 mm/s](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/oldts.noinsert.2mmsgraph.PNG)
+Figure 10: Baseline experiment results for a 2 mm/s upflow velocity in the old tube settler. The turbidity increased exponentially after the tenth hour. The orange line is the line of best fit, which increases exponentially. The code used to create this graph can be found in the Python Code section in the Manual.
 
-![Gelling in Baseline Experiment](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/floc%20buildup.jpg)
-Figure 12: Gelling at the bottom of the old tube settler at a 2 mm/s upflow velocity.
+![Gelling in Baseline Experiment Old TS 2mm/s](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/floc%20buildup.jpg)
+Figure 11: Gelling at the bottom of the old tube settler at a 2 mm/s upflow velocity.
 
 ### Experiment with Stacked Cylinder (41°) Insert at 2 mms/s Upflow Velocity
-The following data was collected for an experiment running at 2 mm/s that included the stacked cylinder (41°) insert to alter the bottom geometry of the tube settler.
+The following data was collected for an experiment running at 2 mm/s that included the stacked cylinder (41°) insert to alter the bottom geometry of the tube settler. An exponential increase in the effluent turbidity was observed in Figure 12, which correlates to an exponentially decaying floc blanket.
 
 **[I would recommend sticking with one name for the stacked cylinder insert. You use both 41 degree cylindrical insert and stacked cylinder. -Addressed ML]**
 
-![Stacked Cyl Results](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/First_Bott_Geo.JPG)
-Figure 13: Results from using the stacked cylinder 3D printed insert in the old tube settler at a 2 mm/s upflow velocity.
+![Stacked Cyl 2 mm/s](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/oldts.stackedcyl.2mmsgraph.PNG)
+Figure 12: Results from using the stacked cylinder 3D printed insert in the old tube settler at a 2 mm/s upflow velocity. The orange line is the best fit line and grows exponentially. The blue line is a linear best fit line but does not follow the data as well as the orange line, confirming that there is an exponential increase in the turbidity. The code used to create this graph can be found in the Python Code section in the Manual.
 
 ![Stacked Cyl Gelling](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/stackedcyl1%20floc%20buildup2.jpg)
 ![Stacked Cyl Gelling Closeup](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/stackedcyl1%20floc%20buildup1.jpg)
-Figure 14: Gelling in the experiment with the stacked cylinder 3D printed insert in the old tube settler at a 2 mm/s upflow velocity.
+Figure 13: Gelling in the experiment with the stacked cylinder 3D printed insert in the old tube settler at a 2 mm/s upflow velocity.
 
-**[Again same thing. If you say that it's linear a line of best fit would definitely help in visualizing whether or not the data is actually linear.]**
+**[Again same thing. If you say that it's linear a line of best fit would definitely help in visualizing whether or not the data is actually linear. addressed ML]**
 
-In the experiment with the stacked cylinder (41°) insert, the floc blanket (which also formed and stabilized within the first ten hours) did not decay as quickly as that in the baseline experiment, which was indicated by a less steep increase in effluent turbidity (see Figure 13) compared to the baseline experiment. This was likely due to the bottom geometry, whose sloped sides allowed flocs to slide down and be resuspended by the inflow of water. However, gelling was still observed, as can be seen in Figure 14. The team concluded that the gelling was likely due to the angle of the slope of the insert, which is 41°, and kinetic or rolling friction (the force that resists an object's motion when the object rolls on a surface) because although an increase in the slope angle reduces the rolling friction, an increase in weight increases the rolling friction.
+In the experiment with the stacked cylinder (41°) insert, the floc blanket (which also formed and stabilized within the first ten hours) did not decay as quickly as that in the baseline experiment, which was indicated by a less steep increase in effluent turbidity (see Figure 12) compared to the baseline experiment. This was likely due to the bottom geometry, whose sloped sides allowed flocs to slide down and be resuspended by the inflow of water. However, gelling was still observed, as can be seen in Figure 13. The team concluded that the gelling was likely due to the angle of the slope of the insert, which is 41°, and kinetic or rolling friction (the force that resists an object's motion when the object rolls on a surface) because although an increase in the slope angle reduces the rolling friction, an increase in weight increases the rolling friction.
 
 Within the first ten hours of the experiment, the rolling friction did not affect the individual flocs as much because of the flocs' weight, a relatively small weight. This lack of rolling friction allowed the flocs to slide down the slope, thus preventing flocs from stacking on top of each other and creating buildup. However, as the flocs began to stack on top of each other, due to the angle of the slope, their combined weight increased, which caused the rolling friction to increase. Due to this increased rolling friction,  **[Due to this increased rolling friction, -Addressed LB]** the flocs moved **[moved - Addressed LB]** at a slower speed and less freely at the bottom of the stacked cylinder insert, and **[and -Addressed LB]** flocs began to stack on top of each other, which was also seen in the baseline experiment.
 
@@ -141,33 +141,54 @@ According to the equation, if *Q* (flow rate in units of volume per time) was he
 
 There was also a spike in the data that was followed by a decrease in the effluent turbidity. This likely occurred because the floc blanket was agitated. The flocs were still stacked together, but because of gelling they were able to move through the tube settler as a group. As they moved upwards, they pushed the non-bounded flocs (located at the top of the settler tube) out of the tube and into the effluent turbidimeter, thus increasing the effluent turbidity measured.
 
-In terms of how these results relate to future work, the experiments confirmed that a slope angle of 41° is too low and it has been increased in the new insert designs; experimentation with the new, steeper angles will begin soon.
+In terms of how these results relate to future work, the experiments confirmed that a slope angle of 41° is too low as it still causes an exponential floc blanket decay as well as gelling. Experimentation with new, steeper angles is detailed below.
 
 ###Baseline Experiment: New Tube Settler with Tube Attachment at 2 mm/s Upflow Velocity
-Due to the tube settler breaking, a new tube settler was used for all further experiments. This new tube settler is identical to the original except for an added tube attachment, pictured below.
+Since the old tube settler broke, a new tube settler was used for all further experiments. This new tube settler is identical to the original except for an added tube attachment, pictured below in Figure 15.
 
+Keeping all other variables the same, the following data was obtained (Figure 14). A floc blanket formed and but it began to decrease exponentially over time. A floc blanket formed with consistent removal with an effluent turbidity between 0.5-2.5 NTU. The effluent turbidity also increased exponentially, shown with the best fit line. This corresponded to an exponentially decaying floc blanket.
 
-Keeping all other variables the same, the following data was obtained (Figure ). A floc blanket formed, yet it did not stablize as can be seen with the exponential increase in turbidity from the very beginning of the experiment to the very end.
+Although different from the initial baseline experiment with the old settler, the results for this new baseline experiment coincided with the results obtained by the HRS Fall 2018 team baseline experiment with an upflow velocity of 2 mm/s. Gelling was also observed, pictured in Figure 15. The team has not yet concluded as to why this baseline differed from the initial baseline experiment ran this semester, but more will be learned about this discrepancy in future work.
 
-A floc blanket formed with consistent removal with an effluent turbidity between 0.5-2.5 NTU; there was no floc blanket decay as the effluent turbidity remained constant throughout the trial. Although different from our initial baseline experiment, the results for this new baseline experiment coincided with the results obtained by the HRS Fall 2018 team’ baseline experiment with an upflow velocity of 2 mm/s. The team has not yet concluded as to why this baseline differed from the initial baseline experiment ran this semester, but we hope to understand this discrepancy through future work.
+![Baseline Expt: New TS 2 mm/s](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/newts.noinsert.2mmsgraph.PNG)
+Figure 14: A new baseline experiment using a new tube settler at a 2 mm/s upflow velocity. The best fit line is the orange line that increases exponentially. The code used to create this graph can be found in the Python Code section in the Manual.
 
-### Experiment with Linear Cylinder (58°) Insert at 2 mm/s Upflow Velocity
+![Baseline Expt: New TS 2mm/s](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/newts.noinsert.2mms.jpg)
+Figure 15: Gelling was observed in the baseline experiment which included the new tube settler running at a 2 mm/s upflow velocity.
 
 **[No personal pronouns! - Addressed LB]**
 
-###Baseline Experiment: New Tube Settler with Tube Attachment at 3 mm/s Upflow Velocity
+### Experiment with Linear Cylinder (58°) Insert at 2 mm/s Upflow Velocity
+The next experiment used the new tube settler running at a 2 mm/s upflow velocity and included a new insert, which had a slope of 58°. Unlike previous experiments, the effluent turbidity did not change in an exponential manner; the turbidity appeared to be constant, ranging mainly from 1 NTU to 4 NTU (Figure 16).
 
-asdfghjkl
+The experiment had an excellent removal level as the effluent turbidity was kept low and constant between 1 to 4 NTU. The effluent turbidity increased linearly over 20 hours, which indicated that the floc blanket was decaying linearly instead of exponentially. Gelling was also not observed (Figure 17), proving the insert successful in preventing sediment buildup at the bottom of the tube settler.
+
+![LinCyl 2mm/s Graph](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/newts.lincyl.2mmsgraph.PNG)
+Figure 16: Experiment using the new tube settler running at a 2 mm/s upflow velocity with a linear cylinder (58°) insert. The blue line is a linear best fit line, and the linear increase of the effluent turbidity indicates a linear decay of the floc blanket. The code used to create this graph can be found in the Python Code section in the Manual.
+
+![Linear Cyl Floc Blanket](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/newts.lincyl.2mms.jpg)
+Figure 17: With the linear cylinder (58°) insert, no gelling occurred within the tube settler; the flocs remained suspended within the tube. No buildup sat at the bottom.
+
+###Baseline Experiment: New Tube Settler with Tube Attachment at 3 mm/s Upflow Velocity
+A baseline control experiment at 3 mm/s upflow velocity was conducted without any printed inserts. As seen in Figure 18, the effluent turbidity lies between 2.5 to 22.5 NTU. From the beginning of the experiment, the effluent turbidity increased linearly, as shown with the blue line (linear best fit line). This corresponds to a linear decay of the floc blanket. This greatly differs from baseline experimental values for 2 mm/s upflow velocities since the blanket began decaying from the beginning rather than stabilizing for a few hours then decaying. Despite the linear decay of the floc blanket, no gelling was observed, depicted in Figure 19. Therefore it has been deemed unnecessary to test the insert at a 3 mm/s upflow velocity.
+
+![Baseline Expt 3 mm/s Graph](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/newts.noinsert.3mmsgraph.PNG)
+Figure 18: The experiment parameters included the new tube settler at a 3 mm/s upflow velocity with no insert. The effluent turbidity increased linearly and did not have stable or consistent removal. The R^2 value was .971 indicating that a linear regression line was appropriate for this graph.
+
+![Baseline Exp 3mm/s No Gelling](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/Base%203mms.jpg)
+Figure 19: In the experiment with the new tube settler at a 3 mm/s upflow velocity with no insert, gelling was not observed.
+
+The bottom geometry was designed to reduce gelling within the tube settler, which has been successfully done in experiments using a 58° linear cylinder insert with an upflow velocity of 2 mm/s. Future experiments will be conducted at an upflow velocity of 1 mm/s. At this upflow velocity, the 58° linear cylinder insert and a 75° linear cylinder insert will also be tested. The increase in the angle of the insert is expected to (1) prevent gelling or sediment buildup and (2) reduce floc blanket decay (exponential to linear decay), thus forming a more stable floc blanket. If gelling does not occur with either insert, then a bottom geometry angle between 58 and 75 degrees would be the best bottom geometry to reduce manual clean-up time for lab-scale experiments. Experiments will also be conducted with fernco couplings, a more modern design to pipe couplings.
 
 ## Conclusions
-The Bottom Geometry team noticed significant differences between their results and that of previous AguaClara teams. Unlike previous semesters, the team tested inserts with sloped, and moved away from conical designs. The new cylindrical insert showed an improvement in reducing effluent turbidity, and therefore a reduced rate of floc blanket decay. However, a slope of 45° for the insert is too shallow and needs to be increased in future experiments. Without an insert at the bottom of the tube settler, the floc blanket began to decay exponentially; however, when an insert was attached to the tube settler, the floc blanket decay began to decay linearly and did not decay exponentially like the baseline experiment.
+The Bottom Geometry team noticed significant differences between their results and that of previous AguaClara teams. Unlike previous semesters, the team tested inserts with sloped, and moved away from conical designs. The 41° stacked cylinder insert was unsuccessful in (1) preventing floc buildup or gelling and (2) reducing floc blanket decay. A slope of 41° for the insert was too shallow, and steeper angles like 58° were tested instead. The 58° linear cylinder insert showed massive improvements and succeeding where the stacked cylinder insert failed, as it both prevented gelling and decreased floc blanket decay.
 
-The team has determined that it is more beneficial to have inserts in order to prevent floc decay; however, these inserts still cause floc buildup and gelling. Therefore, the team will continue to work on and improve their cylindrical design by detemining the best angle to prevent gelling. In terms of how this relates to AguaClara, the Bottom Geometry team is making progress in finding an optimal angle in the sloped insert that can eliminate gelling.
+The team has determined that it is more beneficial to have inserts in order to prevent floc blanket decay and gelling. The team will continue to test at lower upflow velocities and determining optimal slope angles for the inserts. In terms of how this relates to AguaClara, the Bottom Geometry team was successful in finding an insert that prevents gelling at a 2 mm/s upflow velocity, and will further test slower velocities.
 
 ## Future Work
 Next steps include designing an insert that fits into the visible, transparent part of the tube settler to understand how flocs and the geometry interact. The cylindrical insert only fit into the coupling that is screwed into the bottom of the settler, so the interaction between the flocs and the sloped geometry was not seen. Designing a longer cylindrical insert for the tube settler would elucidate what slope angles are optimal to prevent floc buildup. Greater slope angles (or steeper sides) will be tested for a 2 mm/s upflow velocity as well as a 3 mm/s upflow velocity.
 
-A successful insert would be a great benefit to the AguaClara Cornell lab. This insert would eliminate floc buildup at the bottom of the tube settler, which would decrease the maintenance and cleaning time of any lab apparatus, allowing researchers to carry out experiments more quickly. After such an insert is designed, research in this area should end because the filter would have completed its role of reducing cleaning time -- no further work **[would be - Addressed LB]** would be needed needed.
+The team also intends to test at a 1 mm/s upflow velocity to see if the 58° linear cylinder insert is still successful. If not, a 75° linear cylinder insert has been printed and will be tested next. A successful insert would be a great benefit to the AguaClara Cornell lab. This insert would eliminate floc buildup at the bottom of the tube settler, which would decrease the maintenance and cleaning time of any lab apparatus, allowing researchers to carry out experiments more quickly. After such an insert is designed, research in this area should end because the filter would have completed its role of reducing cleaning time -- no further work **[would be - Addressed LB]** would be needed.
 
 ## Manual
 ### Purpose and Hypothesis
@@ -197,7 +218,7 @@ A materials list is included below.
 See the [Experimental Apparatus](#Experimental-Apparatus) section for more details. Follow the same tubing connections.
 
 ![HRS Bottom Geometry Apparatus](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/Images/ExperimentalApparatus.PNG)
-Figure 15: Bottom Geometry apparatus with labeled components.
+Figure 20: Bottom Geometry apparatus with labeled components.
 
 ### Procedure
 #### PaCl Dosing Calculations
@@ -245,7 +266,7 @@ print('The run time is ', RunTime)
 #### ProCoDA Settings
 ![PID Control Outputs](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/pid%20ctrl%20outputs.jpg)
 ![PID Control Rules](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/pid%20ctrl%20rules.jpg)
-Figure 9: Rules and Outputs of PID Control. These are the parameters used in the experiments.
+Figure 21: Rules and Outputs of PID Control. These are the parameters used in the experiments.
 
 Table 1: This table details the set points in ProCoDA for the PID Control state.
 
@@ -278,36 +299,154 @@ Data is automatically collected by ProCoDA in an Excel sheet. For experiments th
 For the second sheet that contains data collected from the second day of the experiment, a different formula is used to find the time since the experiment began for the to run. Starting with the first value in the second sheet, the first value from the second sheet is subtracted from the first value from the second sheet, multiplied by 24 hours, and the last converted day fraction value from the first sheet is added. This formula is applied to the rest of the day fraction values in the second sheet. These times also have an associated effluent turbidity value. A graph was created to plot the effluent turbidity over time that the experiment ran.
 
 ![Example Day Fraction Conversion](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/example%20data%20calc.PNG)
-Figure 16: An example day fraction conversion to time since the experiment started. The last three values of the first sheet and the fist three values of the second sheet are included and the formulas are shown.
+Figure 22: An example day fraction conversion to time since the experiment started. The last three values of the first sheet and the fist three values of the second sheet are included and the formulas are shown.
 
-The following code was used to graph the data collected from the experiments. The sheer amount of data, over 100,000 data points, was too much for Python to graph and had a very long processing time. The team decided that it would be more efficient to graph the data in Excel. The code below works for fewer data points, i.e. 10,000.
+#### Python Code
+The following code was used to graph the data collected from the experiments.
 
-```Python
-import matplotlib.pyplot as plt
-import xlrd
-import numpy as np
-file_location = "C:/Users/mlee0/Downloads/April19expcontrol3mmsupflow.xlsx"
-
-workbook = xlrd.open_workbook(file_location)
-first_sheet = workbook.sheet_by_index(0)
-
-# x axis values
-x = [first_sheet.cell_value(i, 0) for i in range(10000)]
-type(x)
-# corresponding y axis values
-y = [first_sheet.cell_value(i, 1) for i in range(10000)]
-type(y)
-np.array(y)[1:100]
-# plotting the points
-plt.plot(np.array(x), np.array(y))
-plt.show()
-```
-
+#####Baseline Experiment: Old Tube Settler at 2 mm/s Upflow Velocity
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
 import scipy.stats as stats
-file_location = "C:/Users/Luis B/Downloads/april 13 exp control 2 mms upflow.xlsx"
+import scipy.optimize as opt
+import aguaclara.research.procoda_parser as pp
+import numpy as np
+file_location = "2019 Spring/Cleaned Data/march8.xlsx"
+
+data = pd.read_excel(file_location)
+data = pp.remove_notes(data)
+time = pd.to_numeric(data["time"])
+effluent_turbidity = pd.to_numeric(data["Effluent Turbidity "])
+
+def exp_func(x, a, b, c):
+  return a * np.exp(b * x) + c
+
+optimal_parameters, covariance = opt.curve_fit(exp_func, time, effluent_turbidity)
+
+reglineexp = exp_func(time, *optimal_parameters)
+
+linreg = stats.linregress(time, effluent_turbidity)
+slope, intercept, r_value = linreg[0:3]
+reglinelin = time*slope + intercept
+
+print("Slope:", slope)
+print("Intercept:", intercept)
+print("R-squared:", r_value ** 2)
+
+plt.plot(time, effluent_turbidity, "bo")
+plt.plot(time,reglinelin)
+plt.plot(time,reglineexp)
+plt.title("Baseline Experiment: Old Tube Settler at 2 mm/s Upflow Velocity")
+plt.xlabel("Time (hours)")
+plt.ylabel("Effluent Turbidity (NTU)")
+```
+
+#####Experiment with Stacked Cylinder (41°) Insert at 2 mms/s Upflow Velocity
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+import scipy.stats as stats
+import numpy as np
+file_location = "2019 Spring/Cleaned Data/march 11 exp w stackedcyl 2mms upflow.xlsx"
+
+data = pd.read_excel(file_location)
+time = data["time"][0:36700]
+effluent_turbidity = data["Effluent Turbidity"][0:36700]
+
+linreg = stats.linregress(time, effluent_turbidity)
+slope, intercept, r_value = linreg[0:3]
+regline = time*slope + intercept
+
+print("Slope:", slope)
+print("Intercept:", intercept)
+print("R-squared:", r_value ** 2)
+
+def exp_func(x, a, b, c):
+  return a * np.exp(b * x) + c
+
+optimal_parameters, covariance = opt.curve_fit(exp_func, time, effluent_turbidity)
+
+reglineexp = exp_func(time, *optimal_parameters)
+
+plt.plot(time, effluent_turbidity, "bo")
+plt.plot(time,regline)
+plt.plot(time,reglineexp)
+plt.title("Old Tube Settler with Stacked Cylinder at 2 mm/s Upflow Velocity")
+plt.xlabel("Time (hours)")
+plt.ylabel("Effluent Turbidity (NTU)")
+```
+
+#####Baseline Experiment: New Tube Settler with Tube Attachment at 2 mm/s Upflow Velocity
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+import scipy.stats as stats
+import numpy as np
+import aguaclara.research.procoda_parser as pp
+file_location = "2019 Spring/Cleaned Data/april 13 exp control 2 mms upflow.xlsx"
+
+data = pd.read_excel(file_location)
+data = pp.remove_notes(data)
+time = data["Time"]
+effluent_turbidity = data["Effluent Turbidity"]
+
+linreg = stats.linregress(time, effluent_turbidity)
+slope, intercept, r_value = linreg[0:3]
+regline = time*slope + intercept
+
+print("Slope:", slope)
+print("Intercept:", intercept)
+print("R-squared:", r_value ** 2)
+
+def exp_func(x, a, b, c):
+  return a * np.exp(b * x) + c
+
+optimal_parameters, covariance = opt.curve_fit(exp_func, time, effluent_turbidity)
+
+reglineexp = exp_func(time, *optimal_parameters)
+
+plt.plot(time, effluent_turbidity, "bo")
+plt.plot(time,regline)
+plt.plot(time,reglineexp)
+plt.title("Baseline Experiment: New Tube Settler at 2 mm/s Upflow Velocity")
+plt.xlabel("Time (hours)")
+plt.ylabel("Effluent Turbidity (NTU)")
+```
+
+#####Experiment with Linear Cylinder (58°) Insert at 2 mm/s Upflow Velocity
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+import scipy.stats as stats
+import numpy as np
+file_location = "2019 Spring/Cleaned Data/april 11 exp w lincyl 2 mms upflow.xlsx"
+
+data = pd.read_excel(file_location)
+time = data["Time"][0:73647]
+effluent_turbidity = data["Effluent Turbidity"][0:73647]
+
+linreg = stats.linregress(time, effluent_turbidity)
+slope, intercept, r_value = linreg[0:3]
+regline = time*slope + intercept
+
+print("Slope:", slope)
+print("Intercept:", intercept)
+print("R-squared:", r_value ** 2)
+
+plt.plot(time, effluent_turbidity, "bo")
+plt.plot(time,regline)
+plt.title("Experiment with New Tube Settler with Linear Cylinder at 2 mm/s Upflow Velocity")
+plt.xlabel("Time (hours)")
+plt.ylabel("Effluent Turbidity (NTU)")
+```
+
+#####Baseline Experiment: New Tube Settler with Tube Attachment at 3 mm/s Upflow Velocity
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+import scipy.stats as stats
+file_location = "2019 Spring/Cleaned Data/april 19 exp control 3mms upflow.xlsx"
 
 data = pd.read_excel(file_location)
 time1 = data["Time"][0:10000]
@@ -319,17 +458,15 @@ effluent_turbidity_combined = effluent_turbidity1.append(effluent_turbidity2)
 
 linreg = stats.linregress(time_combined, effluent_turbidity_combined)
 slope, intercept, r_value = linreg[0:3]
+regline = time_combined*slope + intercept
 
 print("Slope:", slope)
 print("Intercept:", intercept)
 print("R-squared:", r_value ** 2)
 
-#0:10000
-#11500:25000
-
-#plt.plot(time,effluent_turbidity, "bo")
-plt.plot(effluent_turbidity_combined, "bo")
-plt.title("Baseline Experiment for 3 mm/s Upflow velocity")
+plt.plot(time_combined, effluent_turbidity_combined, "bo")
+plt.plot(time_combined,regline)
+plt.title("Baseline Experiment: New Tube Settler at 3 mm/s Upflow Velocity")
 plt.xlabel("Time (hours)")
 plt.ylabel("Effluent Turbidity (NTU)")
 ```
