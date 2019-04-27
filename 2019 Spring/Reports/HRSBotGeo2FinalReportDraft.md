@@ -104,7 +104,7 @@ A successful experiment in the context of the Bottom Geometry team would mean th
 
 A stable floc blanket was indicated by the effluent turbidity -- effluent turbidity was inversely correlated with performance; i.e. a lower effluent turbidity indicated better performance and greater floc blanket stability, which meant the floc blanket does not decay. A stable floc blanket was also indicated by the time it takes for the effluent turbidity to start increasing after reaching the maximum removal. If it took a longer time for turbidity to increase, the blanket is more stable.
 
-###Baseline Experiment: Old Tube Settler at 2 mm/s Upflow Velocity
+### Baseline Experiment: Old Tube Settler at 2 mm/s Upflow Velocity
 A baseline control experiment, at 2 mm/s upflow velocity, was conducted without any printed inserts. As seen in Figure 10, the effluent turbidity lies between 4 to 40 NTU. Within the first ten hours of the experiment, the effluent turbidity remained fairly constant, therefore indicating a floc blanket formed and stabilized; however, the floc blanket began to decay exponentially, illustrated by the exponential increase in effluent turbidity after the tenth hour. Flocs also settled at the bottom of the tube settler, producing "gelling," or forming a thick and dense layer, in a very compact manner (Figure 11). The exponential increase of the turbidity indicated an exponential decay of the floc blanket. This led to the implementation of the stacked cylinder design, whose goal was to stabilize the floc blanket and prevent gelling.
 
 **[How was exponential increase determined. Was there a line of best fit? If there was please include that on the same graph as Figure 11 along with the R^2 value. If not, you should include it -addressed ML]**
@@ -169,7 +169,7 @@ Figure 16: Experiment using the new tube settler running at a 2 mm/s upflow velo
 ![Linear Cyl Floc Blanket](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/newts.lincyl.2mms.jpg)
 Figure 17: With the linear cylinder (58°) insert, no gelling occurred within the tube settler; the flocs remained suspended within the tube. No buildup sat at the bottom.
 
-###Baseline Experiment: New Tube Settler with Tube Attachment at 3 mm/s Upflow Velocity
+### Baseline Experiment: New Tube Settler with Tube Attachment at 3 mm/s Upflow Velocity
 A baseline control experiment at 3 mm/s upflow velocity was conducted without any printed inserts. As seen in Figure 18, the effluent turbidity lies between 2.5 to 22.5 NTU. From the beginning of the experiment, the effluent turbidity increased linearly, as shown with the blue line (linear best fit line). This corresponds to a linear decay of the floc blanket. This greatly differs from baseline experimental values for 2 mm/s upflow velocities since the blanket began decaying from the beginning rather than stabilizing for a few hours then decaying. Despite the linear decay of the floc blanket, no gelling was observed, depicted in Figure 19. Therefore it has been deemed unnecessary to test the insert at a 3 mm/s upflow velocity.
 
 ![Baseline Expt 3 mm/s Graph](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/newts.noinsert.3mmsgraph.PNG)
@@ -301,10 +301,10 @@ For the second sheet that contains data collected from the second day of the exp
 ![Example Day Fraction Conversion](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/example%20data%20calc.PNG)
 Figure 22: An example day fraction conversion to time since the experiment started. The last three values of the first sheet and the fist three values of the second sheet are included and the formulas are shown.
 
-#### Python Code
+### Python Code
 The following code was used to graph the data collected from the experiments.
 
-#####Baseline Experiment: Old Tube Settler at 2 mm/s Upflow Velocity
+#### Baseline Experiment: Old Tube Settler at 2 mm/s Upflow Velocity
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -342,7 +342,7 @@ plt.xlabel("Time (hours)")
 plt.ylabel("Effluent Turbidity (NTU)")
 ```
 
-#####Experiment with Stacked Cylinder (41°) Insert at 2 mms/s Upflow Velocity
+#### Experiment with Stacked Cylinder (41°) Insert at 2 mms/s Upflow Velocity
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -377,7 +377,7 @@ plt.xlabel("Time (hours)")
 plt.ylabel("Effluent Turbidity (NTU)")
 ```
 
-#####Baseline Experiment: New Tube Settler with Tube Attachment at 2 mm/s Upflow Velocity
+#### Baseline Experiment: New Tube Settler with Tube Attachment at 2 mm/s Upflow Velocity
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -414,7 +414,7 @@ plt.xlabel("Time (hours)")
 plt.ylabel("Effluent Turbidity (NTU)")
 ```
 
-#####Experiment with Linear Cylinder (58°) Insert at 2 mm/s Upflow Velocity
+#### Experiment with Linear Cylinder (58°) Insert at 2 mm/s Upflow Velocity
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -441,7 +441,7 @@ plt.xlabel("Time (hours)")
 plt.ylabel("Effluent Turbidity (NTU)")
 ```
 
-#####Baseline Experiment: New Tube Settler with Tube Attachment at 3 mm/s Upflow Velocity
+#### Baseline Experiment: New Tube Settler with Tube Attachment at 3 mm/s Upflow Velocity
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
