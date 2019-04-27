@@ -1,4 +1,4 @@
-# High Rate Sedimentation: Bottom Geometry Report 3 Draft
+# High Rate Sedimentation: Bottom Geometry Final Report Draft
 #### Madeleine Lee (ml895)
 #### Luis Benitez (leb252)
 April 26, 2019
