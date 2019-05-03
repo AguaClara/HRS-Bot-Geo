@@ -143,12 +143,12 @@ There was also a spike in the data that was followed by a decrease in the efflue
 
 In terms of how these results relate to future work, the experiments confirmed that a slope angle of 41° is too low as it still causes an exponential floc blanket decay as well as gelling. Experimentation with new, steeper angles is detailed below.
 
-###Baseline Experiment: New Tube Settler with Tube Attachment at 2 mm/s Upflow Velocity
+### Baseline Experiment: New Tube Settler with Tube Attachment at 2 mm/s Upflow Velocity
 Since the old tube settler broke, a new tube settler was used for all further experiments. This new tube settler is identical to the original except for an added tube attachment, pictured below in Figure 15.
 
 Keeping all other variables the same, the following data was obtained (Figure 14). A floc blanket formed and but it began to decrease exponentially over time. A floc blanket formed with consistent removal with an effluent turbidity between 0.5-2.5 NTU. The effluent turbidity also increased exponentially, shown with the best fit line. This corresponded to an exponentially decaying floc blanket.
 
-Although different from the initial baseline experiment with the old settler, the results for this new baseline experiment coincided with the results obtained by the HRS Fall 2018 team baseline experiment with an upflow velocity of 2 mm/s. Gelling was also observed, pictured in Figure 15. The team has not yet concluded as to why this baseline differed from the initial baseline experiment ran this semester, but more will be learned about this discrepancy in future work.
+A side-by-side comparison of the two baselines run at a 2 mm/s upflow velocity without inserts show that the results are not very different. Both have similar effluent turbidity ranges and similar exponential growth in turbidity. Therefore, there is no significant difference between the old and new tube settler. Gelling was also observed, pictured in Figure 15. 
 
 ![Baseline Expt: New TS 2 mm/s](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/newts.noinsert.2mmsgraph.PNG)
 Figure 14: A new baseline experiment using a new tube settler at a 2 mm/s upflow velocity. The best fit line is the orange line that increases exponentially. The code used to create this graph can be found in the Python Code section in the Manual.
