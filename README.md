@@ -11,7 +11,9 @@ Members:
 
 ## Spring 2019
 [Spring 2019 Midway Symposium](https://docs.google.com/presentation/d/1c2WiqrccmSYwniigbZUiy_6dTOUMYyJcTIJxhGdgXDE/edit?usp=sharing)
+
 [Fall 2019 Final Presentation Slides](https://docs.google.com/presentation/d/1kJfBP1fKkyYllaDMtkyKXJn7iTub59EoxFi_eMwmglI/edit?usp=sharing)
+
 [Fall 2019 Final Presentation Video](https://www.youtube.com/watch?v=p-rmQXoAfXs&list=PLhsGtpY8ipdZL4lExJA8KC0zCkaxwfs8R&index=9&t=0s)
 
 ## Fall 2018
