@@ -3,8 +3,6 @@
 #### Luis Benitez (leb252)
 April 26, 2019
 
-**[Felix: Hey I'm going to be making comments in these square brackets. After addressing any comments please write within the brackets "-Addressed __" with the individual's initials in the __ space. They will be deleted in the next report.]**
-
 ## Abstract
 The purpose of the High Rate Sedimentation: Bottom Geometry team is to develop a new geometry of the bottom of the tube settler to prevent floc buildup since floc buildup increases the maintenance and cleaning time  for the system as the buildup can only be removed manually. Manual removal involves running water through the system and draining it repeatedly until the effluent turbidity reads less than 1 NTU, which is a very time consuming process. These geometries will be developed using rapid prototyping techniques including designing the parts in Onshape and 3D printing. To test these geometries, they will be directly inserted into the bottom of the tube settler. A successful geometry would cause resuspension of flocs without any buildup. Geometries that have been proven to cause buildup are those with regular conical shapes because it allows flocs to lock together in a ring such that the upflow of water cannot break it up.
 
@@ -26,7 +24,6 @@ Although the sediment buildup does not affect sedimentation efficiency, this bui
 
 As a continuing team, Bottom Geometry will be moving forward with testing the inserts designed in previous semesters. One main design that will be tested: a sloped-wall shape that converges to a rectangle, depicted in Figure 3. This semester, with the use of rapid prototyping techniques, the Bottom Geometry team will be able to pass through iterations of designs to find an optimal one that can prevent sediment buildup in the lab apparatus.
 
-**[Remember to use past tense. Write as if you have done all this already, and not doing it. Only exception to this rule isin the future work section, and when you are explaining concepts that won't change like explaining buildup/gelling. -Addressed LB ML]**
 
 ![Symmetrical AguaClara Plant Design -- Early Version](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/Images/fluoride%20auto%20insert.PNG)
 Figure 3: Filter insert with symmetrical, rectangular cross sections and a sloped top portion.
@@ -64,7 +61,6 @@ Figure 7: The inner geometry of the coupling.
 ![Stacked Cyl in Coupling Bottom](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/stackedcyl1a.jpg)
 Figure 8: A stacked cylinder filter insert fit inside the coupling.
 
-**[Just wondering… are there any articles/papers on bot geometry of sedimentation tanks outside of AguaClara? I assume not based on how you guys have not cited any. In that case it would be good to explain that there is lack of literature outside of our bubble. -Addressed - LB]**
 
 ### Calculations
 #### Coagulant Dosing
@@ -75,8 +71,6 @@ The flow rate through the system was calculated in accordance with the desired u
 
 <div style="text-align:center"><img src ="https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/Images/dvdt.svg?sanitize=true" /></div>
 
-**[Typically flow rate is represented by Q rather than a dV/dt. I thought it was dv/dt like acceleration for a second. Also I would recommend just using latex rather than importing an image for the equation. -Addressed ML: using LaTex only works in Atom. When we tried to upload the report with LaTex, it didn't render properly in Github so the solution was to use an .svg format. Kanha suggested using an image.]**
-
 was used to determine the flow rates. A 2 mm/s upflow velocity corresponded to a flow rate of 60 mL/min, and a 3 mm/s upflow velocity corresponded to a flow rate of 90 mL/min.
 
 ### ProCoDA Methods
@@ -85,7 +79,7 @@ PID Control was the state that was used to run experiments. PID Control controll
 ### Experimental Apparatus
 The overall experimental setup consisted of clay and coagulant reservoirs, four distinct pumps, a flocculator, a tube settler, a pressure attenuator, and two turbidimeters. The clay stock tank was the clay reservoir and holds a mixture of clay and water. The stirrer continuously mixed the contents of the stock tank. The PaCl coagulant stock tank contained water and PaCl (the coagulant agent) at a concentration of 5 mg/L. The first pump, the water pump, controlled the water flow throughout the system with the flow rate set manually. The second pump, the clay pump, was controlled by ProCoDA with the use of PID Control to dose clay into the system to maintain an influent turbidity of 100 NTU. The third pump, the coagulant pump, was used to control the coagulant dose and was set manually to dose the optimal coagulant concentration determined by the Summer 2018 High Rate Sedimentation team. The final pump, the effluent pump, was used to pump effluent out of the floc weir to prevent the buildup of too many flocs.
 
-The flocculator was made by winding tubing around a cardboard cylinder. The purpose of the flocculator is to encourage collisions between clay and coagulant particles **[flocculator's purpose is to encourage collisions between clay and coagulant particles more specifically - Addressed LB]**. Sedimentation occurred in the tube settler, where flocs are recirculated through the settler. Optimal performance of the tube settler involved the formation of a floc blanket, or a suspended fluidized bed of flocs that capture other flocs that are too small to settle. The flocs then flowed down the floc weir, the extension jutting out from the left side of the tube settler. The pressure attenuator indicated whether there pressure was building up in the system; i.e. if water was rising in the attenuator, pressure was building up somewhere, likely due to a closed valve. Lastly, there were two turbidimeters: one that measured influent turbidity and one that measured effluent turbidity. All these components are labeled in Figure 9 below.
+The flocculator was made by winding tubing around a cardboard cylinder. The purpose of the flocculator is to encourage collisions between clay and coagulant particles. Sedimentation occurred in the tube settler, where flocs are recirculated through the settler. Optimal performance of the tube settler involved the formation of a floc blanket, or a suspended fluidized bed of flocs that capture other flocs that are too small to settle. The flocs then flowed down the floc weir, the extension jutting out from the left side of the tube settler. The pressure attenuator indicated whether there pressure was building up in the system; i.e. if water was rising in the attenuator, pressure was building up somewhere, likely due to a closed valve. Lastly, there were two turbidimeters: one that measured influent turbidity and one that measured effluent turbidity. All these components are labeled in Figure 9 below.
 
 ![HRS Bottom Geometry Apparatus](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/Images/ExperimentalApparatus.PNG)
 Figure 9: Bottom Geometry apparatus with labeled components.
@@ -97,8 +91,6 @@ First, the tube settler was drained of any water and clay. Next, the turbidimete
 #### Experimental Procedure
 At the beginning of an experiment, all valves and connections were checked to ensure desired pathways were clear and undesired pathways were blocked. Next, water and coagulant pumps were set to desired experimental flow rates. The clay stock tank was filled with clay and tap water, and the coagulant stock tank was filled with coagulant and deionized water at the proper concentrations. Next, the clay, coagulant, and waste pumps were turned on. Lastly, ProCoDA was turned on and the state was set to PID Control. During the duration of the experiment, ProCoDA collected data relevant to the experiment, including day fraction, influent turbidity, effluent turbidity, flocculator flow rate, and the speed at which clay was being pumped into the system. The data relevant to measuring the floc blanket's success was the effluent turbidity, and day fraction was converted to time (in hours) since the experiment began.
 
-**[Great job explaining the experimental set-up but you guys however, it's not clear what you were measuring based on only reading the methods. For example in experimental procedure I assume that there was a step where you saved your data that was being collected into a file somewhere on your desktop in the lab. What variables were being measured in that file? etc. - Addressed ML]**
-
 ## Results and Analysis
 A successful experiment in the context of the Bottom Geometry team would mean that the floc blanket was stable and there was no buildup of flocs at the bottom of the tube settler, or gelling. Floc blankets formed when flocs continually recirculated and suspended in the tube settler; the formation of a floc blanket was influenced by the bottom geometry because the geometry determines whether flocs will settle at the bottom. A flat geometry allowed flocs to settle, while a sloped geometry caused flocs to slide down, preventing a floc from being stagnant.
 
@@ -106,8 +98,6 @@ A stable floc blanket was indicated by the effluent turbidity -- effluent turbid
 
 ### Baseline Experiment: Old Tube Settler at 2 mm/s Upflow Velocity
 A baseline control experiment, at 2 mm/s upflow velocity, was conducted without any printed inserts. As seen in Figure 10, the effluent turbidity lies between 4 to 40 NTU. Within the first ten hours of the experiment, the effluent turbidity remained fairly constant, therefore indicating a floc blanket formed and stabilized; however, the floc blanket began to decay exponentially, illustrated by the exponential increase in effluent turbidity after the tenth hour. Flocs also settled at the bottom of the tube settler, producing "gelling," or forming a thick and dense layer, in a very compact manner (Figure 11). The exponential increase of the turbidity indicated an exponential decay of the floc blanket. This led to the implementation of the stacked cylinder design, whose goal was to stabilize the floc blanket and prevent gelling.
-
-**[How was exponential increase determined. Was there a line of best fit? If there was please include that on the same graph as Figure 11 along with the R^2 value. If not, you should include it -addressed ML]**
 
 ![Baseline Expt Old Settler 2 mm/s](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/oldts.noinsert.2mmsgraph.PNG)
 Figure 10: Baseline experiment results for a 2 mm/s upflow velocity in the old tube settler. The turbidity increased exponentially after the tenth hour. The orange line is the line of best fit, which increases exponentially. The code used to create this graph can be found in the Python Code section in the Manual.
@@ -118,8 +108,6 @@ Figure 11: Gelling at the bottom of the old tube settler at a 2 mm/s upflow velo
 ### Experiment with Stacked Cylinder (41°) Insert at 2 mms/s Upflow Velocity
 The following data was collected for an experiment running at 2 mm/s that included the stacked cylinder (41°) insert to alter the bottom geometry of the tube settler. An exponential increase in the effluent turbidity was observed in Figure 12, which correlates to an exponentially decaying floc blanket.
 
-**[I would recommend sticking with one name for the stacked cylinder insert. You use both 41 degree cylindrical insert and stacked cylinder. -Addressed ML]**
-
 ![Stacked Cyl 2 mm/s](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/oldts.stackedcyl.2mmsgraph.PNG)
 Figure 12: Results from using the stacked cylinder 3D printed insert in the old tube settler at a 2 mm/s upflow velocity. The orange line is the best fit line and grows exponentially. The blue line is a linear best fit line but does not follow the data as well as the orange line, confirming that there is an exponential increase in the turbidity. The code used to create this graph can be found in the Python Code section in the Manual.
 
@@ -127,11 +115,9 @@ Figure 12: Results from using the stacked cylinder 3D printed insert in the old 
 ![Stacked Cyl Gelling Closeup](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/stackedcyl1%20floc%20buildup1.jpg)
 Figure 13: Gelling in the experiment with the stacked cylinder 3D printed insert in the old tube settler at a 2 mm/s upflow velocity.
 
-**[Again same thing. If you say that it's linear a line of best fit would definitely help in visualizing whether or not the data is actually linear. addressed ML]**
-
 In the experiment with the stacked cylinder (41°) insert, the floc blanket (which also formed and stabilized within the first ten hours) did not decay as quickly as that in the baseline experiment, which was indicated by a less steep increase in effluent turbidity (see Figure 12) compared to the baseline experiment. This was likely due to the bottom geometry, whose sloped sides allowed flocs to slide down and be resuspended by the inflow of water. However, gelling was still observed, as can be seen in Figure 13. The team concluded that the gelling was likely due to the angle of the slope of the insert, which is 41°, and kinetic or rolling friction (the force that resists an object's motion when the object rolls on a surface) because although an increase in the slope angle reduces the rolling friction, an increase in weight increases the rolling friction.
 
-Within the first ten hours of the experiment, the rolling friction did not affect the individual flocs as much because of the flocs' weight, a relatively small weight. This lack of rolling friction allowed the flocs to slide down the slope, thus preventing flocs from stacking on top of each other and creating buildup. However, as the flocs began to stack on top of each other, due to the angle of the slope, their combined weight increased, which caused the rolling friction to increase. Due to this increased rolling friction,  **[Due to this increased rolling friction, -Addressed LB]** the flocs moved **[moved - Addressed LB]** at a slower speed and less freely at the bottom of the stacked cylinder insert, and **[and -Addressed LB]** flocs began to stack on top of each other, which was also seen in the baseline experiment.
+Within the first ten hours of the experiment, the rolling friction did not affect the individual flocs as much because of the flocs' weight, a relatively small weight. This lack of rolling friction allowed the flocs to slide down the slope, thus preventing flocs from stacking on top of each other and creating buildup. However, as the flocs began to stack on top of each other, due to the angle of the slope, their combined weight increased, which caused the rolling friction to increase. Due to this increased rolling friction, at a slower speed and less freely at the bottom of the stacked cylinder insert, and flocs began to stack on top of each other, which was also seen in the baseline experiment.
 
 The gelling in both experiments create a positive feedback loop in which floc buildup was amplified. For example, gelling created a dense layer of flocs within a horizontal cross section of the tube settler, which decreased the empty area in the cross section. Below is the equation that relates flow rate to cross sectional area and velocity.
 
@@ -155,8 +141,6 @@ Figure 14: A new baseline experiment using a new tube settler at a 2 mm/s upflow
 
 ![Baseline Expt: New TS 2mm/s](https://raw.githubusercontent.com/AguaClara/HRS-Bot-Geo/master/2019%20Spring/images/newts.noinsert.2mms.jpg)
 Figure 15: Gelling was observed in the baseline experiment which included the new tube settler running at a 2 mm/s upflow velocity.
-
-**[No personal pronouns! - Addressed LB]**
 
 ### Experiment with Linear Cylinder (58°) Insert at 2 mm/s Upflow Velocity
 The next experiment used the new tube settler running at a 2 mm/s upflow velocity and included a new insert, which had a slope of 58°. Unlike previous experiments, the effluent turbidity did not change in an exponential manner; the turbidity appeared to be constant, ranging mainly from 1 NTU to 4 NTU (Figure 16).
@@ -188,7 +172,7 @@ The team has determined that it is more beneficial to have inserts in order to p
 ## Future Work
 Next steps include designing an insert that fits into the visible, transparent part of the tube settler to understand how flocs and the geometry interact. The cylindrical insert only fit into the coupling that is screwed into the bottom of the settler, so the interaction between the flocs and the sloped geometry was not seen. Designing a longer cylindrical insert for the tube settler would elucidate what slope angles are optimal to prevent floc buildup. Greater slope angles (or steeper sides) will be tested for a 2 mm/s upflow velocity as well as a 3 mm/s upflow velocity.
 
-The team also intends to test at a 1 mm/s upflow velocity to see if the 58° linear cylinder insert is still successful. If not, a 75° linear cylinder insert has been printed and will be tested next. A successful insert would be a great benefit to the AguaClara Cornell lab. This insert would eliminate floc buildup at the bottom of the tube settler, which would decrease the maintenance and cleaning time of any lab apparatus, allowing researchers to carry out experiments more quickly. After such an insert is designed, research in this area should end because the filter would have completed its role of reducing cleaning time -- no further work **[would be - Addressed LB]** would be needed.
+The team also intends to test at a 1 mm/s upflow velocity to see if the 58° linear cylinder insert is still successful. If not, a 75° linear cylinder insert has been printed and will be tested next. A successful insert would be a great benefit to the AguaClara Cornell lab. This insert would eliminate floc buildup at the bottom of the tube settler, which would decrease the maintenance and cleaning time of any lab apparatus, allowing researchers to carry out experiments more quickly. After such an insert is designed, research in this area should end because the filter would have completed its role of reducing cleaning time -- no further work would be needed.
 
 ## Manual
 ### Purpose and Hypothesis
